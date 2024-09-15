@@ -1,16 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import React from "react";
+import AnimeFeature from "./feature/Album/pages";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       <img src={logo} className="App-logo" alt="logo" />
-       <h2>Hello</h2> 
-       <h1 style={{ color : 'red' }}>
-          This is react!
-       </h1>    
-      </header>
+      <AnimeFeature />
     </div>
   );
 }

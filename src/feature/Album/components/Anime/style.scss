@@ -1,0 +1,12 @@
+.anime{
+    &_image{
+        & > img{
+            border-radius: 0.5rem;
+            width: 300px;
+            height: 300px;
+        }   
+    }
+    &_name{
+        font-weight: bold;
+    }
+}
