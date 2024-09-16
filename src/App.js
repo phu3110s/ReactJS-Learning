@@ -1,10 +1,13 @@
 import "./App.css";
 import React from "react";
-import AnimeFeature from "./feature/Album/pages";
+import TodoFeature from "./feature/Todo/Page";
+// import ColorBox from "./components/ColorBox";
+// import Counter from "./components/Counter";
+// import AnimeFeature from "./feature/Album/pages";
 function App() {
   return (
     <div className="App">
-      <AnimeFeature />
+      <TodoFeature />
     </div>
   );
 }
