@@ -1,16 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import React from "react";
+import TodoFeature from "./feature/Todo/Page";
+// import ColorBox from "./components/ColorBox";
+// import Counter from "./components/Counter";
+// import AnimeFeature from "./feature/Album/pages";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       <img src={logo} className="App-logo" alt="logo" />
-       <h2>Hello</h2> 
-       <h1 style={{ color : 'red' }}>
-          This is react!
-       </h1>    
-      </header>
+      <TodoFeature />
     </div>
   );
 }
