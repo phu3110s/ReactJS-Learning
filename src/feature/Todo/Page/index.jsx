@@ -1,29 +1,20 @@
 import React from "react";
-import ToDoList from "../components/TodoList";
+import {
+  Router,
+  Switch,
+  useRouteMatch,
+} from "react-router-dom/cjs/react-router-dom.min";
+import DetailPage from "./DetailPage";
+
+TodoFeature.propTypes = {};
 
 function TodoFeature(props) {
-  const todoList = [
-    {
-      id: 1,
-      title: "Eat",
-      status: "new",
-    },
-    {
-      id: 2,
-      title: "Sleep",
-      status: "completed",
-    },
-    {
-      id: 3,
-      title: "Code",
-      status: "new",
-    },
-  ];
+  const match = useRouteMatch();
   return (
-    <div>
-      <h3 className="centerHeadline">Todo List</h3>
-      <ToDoList todoList={todoList} />
-    </div>
+    <Switch>
+      <Router path={match.path} component={DetailPage} />
+      {/* <Router path={``} component={ListPage} /> */}
+    </Switch>
   );
 }
 

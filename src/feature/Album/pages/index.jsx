@@ -23,7 +23,7 @@ function AnimeFeature() {
   return (
     <div>
       <h2>Nơi làm wibu</h2>
-      <AnimeList animeList={animeList} /> {/* Pass animeList as a prop */}
+      <AnimeList animeList={animeList} /> {/* Pass animeList   as a prop */}
     </div>
   );
 }
